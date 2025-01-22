@@ -39,11 +39,7 @@
 <body class="pb-4">
   <header>
     <!-- navigation bar (web only): -->
-    {%- if page.url contains "kaus" -%}
-      {%- include partials/kaus-navbar.html -%}
-    {%- else -%}
-      {%- include partials/navbar.html -%}
-    {%- endif -%}
+    {%- include partials/navbar.html -%}
 
     {%- unless page.url != "/" -%}
       <!-- site title (print only): -->

@@ -9,9 +9,7 @@
 
   {% include partials/get_page_title.html -%}
   <title>
-    {{- page_title -}}
-    {%- unless page_title == empty %} - {% endunless -%}
-    {{- site.title -}}
+    {{- page.title -}}
   </title>
   {% include partials/list_page_meta.html %}
 

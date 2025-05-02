@@ -10,9 +10,11 @@
 
 <h5 class="mt-4 mb-0">Title: {{ speaker.title }}</h5>
 <h5 class="mt-4 mb-0">Abstract:</h5>
-<p>
-    {{ speaker.abstract }}
-</p>
+{% for par in page.abstract %}
+    <p>
+        {{ par }}
+    </p>
+{% endfor %}
 
 <p class="d-print-none mt-5">
 <a href="/program" class="btn btn-light">
